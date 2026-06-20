@@ -4,7 +4,7 @@ public class Search {
 
         for(Product p : products){
             if(p.productName.equals(target)){
-                System.out.println("Linear Search Found: " + p);
+                System.out.println("Linear Search Found: " + p.productName);
             }
         }
 
@@ -22,7 +22,8 @@ public class Search {
             int cmp = products[mid].productName.compareTo(target);
 
             if(cmp == 0){
-                System.out.println("Binary Search Found: " + products[mid]);
+                System.out.println("Binary Search Found: " + products[mid].productName);
+                break;
             } else if(cmp < 0) {
                 start = mid + 1;
             } else {
