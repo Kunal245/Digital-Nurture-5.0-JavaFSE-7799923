@@ -3,14 +3,14 @@ public class Product {
 
     int productId;
     String productName;
-    String productCategory;
+    String category;
 
-    public Product (int productId, String productName, String productCategory){
+    public Product (int productId, String productName, String category){
         
 
         this.productId = productId;
         this.productName = productName;
-        this.productCategory = productCategory;
+        this.category = category;
         
     }
 }
