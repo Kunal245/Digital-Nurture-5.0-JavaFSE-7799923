@@ -53,3 +53,30 @@ INSERT INTO LOANS
 VALUES(105, 5, 11, SYSDATE+25);
 
 COMMIT;
+
+scenario-1
+BEGIN
+FOR c IN(
+    SELECT 
+        c.CustomerID,
+        c.Name, 
+        c.Age, 
+        l.LoanID 
+    FROM CUSTOMERS c 
+    JOIN LOANS l ON c.CustomerID=l.CustomerID
+) LOOP
+
+    IF c.Age>60 THEN
+        UPDATE LOANS
+        SET InterestRate = InterestRate-1
+        WHERE LoanID = c.LoanID;
+
+        DBMS_OUTPUT.PUT_LINE('Scenario-1: 1% discount applied for: ' || c.Name || ' (Customer ID: ' || c.CustomerID || ')');
+
+    END IF;
+
+END LOOP;
+
+COMMIT;
+END;
+/
