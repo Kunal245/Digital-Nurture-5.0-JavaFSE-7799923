@@ -102,3 +102,26 @@ END LOOP;
 COMMIT;
 END;
 /
+
+-- scenario-3
+BEGIN
+FOR l IN(
+    SELECT 
+        c.Name,
+        l.LoanID,
+        l.DueDate
+    FROM CUSTOMERS c
+    JOIN LOANS l
+    ON c.CustomerID=l.CustomerID
+    WHERE l.DueDate
+    BETWEEN 
+        SYSDATE AND SYSDATE+30
+) LOOP
+
+    DBMS_OUTPUT.PUT_LINE('Reminder: Loan ID ' || l.LoanID || ' for ' || l.Name ||
+                            ' is due on ' || TO_CHAR(l.DueDate, 'DD-MON-YYYY'));
+
+END LOOP;
+
+END;
+/
