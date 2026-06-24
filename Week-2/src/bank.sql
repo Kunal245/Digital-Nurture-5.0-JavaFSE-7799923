@@ -54,7 +54,7 @@ VALUES(105, 5, 11, SYSDATE+25);
 
 COMMIT;
 
-scenario-1
+-- scenario-1
 BEGIN
 FOR c IN(
     SELECT 
@@ -73,6 +73,28 @@ FOR c IN(
 
         DBMS_OUTPUT.PUT_LINE('Scenario-1: 1% discount applied for: ' || c.Name || ' (Customer ID: ' || c.CustomerID || ', Customer Age: ' || c.Age || ')');
 
+    END IF;
+
+END LOOP;
+
+COMMIT;
+END;
+/
+
+-- scenario-2
+BEGIN
+FOR c IN(
+    SELECT 
+        CustomerID,
+        Name,
+        Balance
+    FROM CUSTOMERS
+) LOOP
+    IF c.Balance>10000 THEN
+        UPDATE CUSTOMERS
+        SET IsVIP='Y'
+        WHERE CustomerID = c.CustomerID;
+        DBMS_OUTPUT.PUT_LINE('Promoted to VIP: ' || c.Name || ' (Customer ID: ' || c.CustomerID || ')');
     END IF;
 
 END LOOP;
