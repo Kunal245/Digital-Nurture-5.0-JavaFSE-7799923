@@ -71,7 +71,7 @@ FOR c IN(
         SET InterestRate = InterestRate-1
         WHERE LoanID = c.LoanID;
 
-        DBMS_OUTPUT.PUT_LINE('Scenario-1: 1% discount applied for: ' || c.Name || ' (Customer ID: ' || c.CustomerID || ') (Customer Age: ' || c.Age || ')');
+        DBMS_OUTPUT.PUT_LINE('Scenario-1: 1% discount applied for: ' || c.Name || ' (Customer ID: ' || c.CustomerID || ', Customer Age: ' || c.Age || ') is ' || c.LoanID);
 
     END IF;
 
