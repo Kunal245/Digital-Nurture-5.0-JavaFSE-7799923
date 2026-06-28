@@ -12,7 +12,7 @@ Process monthly 1% interest on savings account
 
 #### Accounts Table:
 
-| Accounts Table | Interest Accounts Table |
+| Accounts Table | After Interest Accounts Table |
 | :---: | :---: |
 | ![Accounts Table](./output/ACCOUNTS_TABLE.png) | ![Interest Accounts Table](./output/interest_ACCOUNTS_TABLE.png) |
 
@@ -28,7 +28,9 @@ Adds bonus by give % to given department
 
 #### Employees Table:
 
-![Employees Table](./output/EMPLOYEES_TABLE.png) ![Employees Table](./output/bonus_EMPLOYEES_TABLE.png)
+| Employees Table | Bonus Employees Table |
+| :---: | :---: |
+| ![Employees Table](./output/EMPLOYEES_TABLE.png) | ![Bonus Employees Table](./output/bonus_EMPLOYEES_TABLE.png) |
 
 #### DBMS Output:
 
@@ -46,4 +48,6 @@ Process to transfer funds to another account
 
 #### DBMS Output:
 
-![DBMS Output](./output/scenario-3i.png) ![DBMS Output](./output/scenario-3ii.png)
+| Scenario 3i | Scenario 3ii |
+| :---: | :---: |
+| ![Scenario 3i](./output/scenario-3i.png) | ![Scenario 3ii](./output/scenario-3ii.png) |
