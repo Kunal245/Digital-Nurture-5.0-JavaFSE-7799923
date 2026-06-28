@@ -28,7 +28,7 @@ Adds bonus by give % to given department
 
 #### Employees Table:
 
-| Employees Table | Bonus Employees Table |
+| Employees Table | After Bonus Employees Table |
 | :---: | :---: |
 | ![Employees Table](./output/EMPLOYEES_TABLE.png) | ![Bonus Employees Table](./output/bonus_EMPLOYEES_TABLE.png) |
 
