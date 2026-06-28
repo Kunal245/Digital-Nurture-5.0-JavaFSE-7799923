@@ -62,3 +62,8 @@ BEGIN
 END;
 /
 
+BEGIN
+    UpdateEmployeeBonus('IT',10);
+END;
+/
+
