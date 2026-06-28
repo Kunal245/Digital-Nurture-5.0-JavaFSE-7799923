@@ -15,3 +15,15 @@ Customers above age 60 get a 1% interest rate discount.
 #### DBMS Output:
 
 ![DBMS Output](./output/scenario-1.png)
+
+### Scenario 2: A customer can be promoted to VIP status based on their balance.
+
+Customers balance above 10000 changed to VIP
+
+#### Customers Table:
+
+![Customers Table](./output/CUSTOMER_TABLE.png)
+
+#### DBMS Output:
+
+![DBMS Output](./output/scenario-2.png)
