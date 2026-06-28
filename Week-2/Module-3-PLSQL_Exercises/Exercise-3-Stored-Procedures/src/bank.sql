@@ -67,5 +67,39 @@ BEGIN
 END;
 /
 
+-- scenario-3: transfer funds
+CREATE OR REPLACE PROCEDURE TransferFunds(
+    fromAccID IN NUMBER,
+    toAccID IN NUMBER,
+    amount IN NUMBER
+) IS currentBalance NUMBER;
+BEGIN
+    SELECT Balance
+    INTO currentBalance
+    FROM ACCOUNTS
+    WHERE AccountID = fromAccID;
 
+    IF currentBalance >= amount THEN
+
+        UPDATE ACCOUNTS
+        SET Balance = Balance - amount
+        WHERE AccountID = fromAccID;
+
+        UPDATE ACCOUNTS
+        SET Balance = Balance + amount
+        WHERE AccountID = toAccID;
+
+        DBMS_OUTPUT.PUT_LINE('Transferred ₹' || amount || ' from Account ID ' || fromAccID || ' to Account ID ' || toAccID);
+        COMMIT;
+
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('Insufficient balance in Account ID ' || fromAccID);
+    END IF;
+END;
+/
+
+BEGIN
+    TransferFunds(101,103,3000);
+END;
+/
 
