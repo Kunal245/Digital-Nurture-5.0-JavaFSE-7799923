@@ -12,7 +12,9 @@ Process monthly 1% interest on savings account
 
 #### Accounts Table:
 
-![Accounts Table](./output/ACCOUNTS_TABLE.png) [Accounts Table](./output/interest_ACCOUNTS_TABLE.png)
+| Accounts Table | Interest Accounts Table |
+| :---: | :---: |
+| ![Accounts Table](./output/ACCOUNTS_TABLE.png) | ![Interest Accounts Table](./output/interest_ACCOUNTS_TABLE.png) |
 
 #### DBMS Output:
 
