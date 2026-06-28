@@ -48,6 +48,6 @@ Process to transfer funds to another account
 
 #### DBMS Output:
 
-| Scenario 3i | Scenario 3ii |
+| Sufficient Balance | Insufficient Balance |
 | :---: | :---: |
 | ![Scenario 3i](./output/scenario-3i.png) | ![Scenario 3ii](./output/scenario-3ii.png) |
