@@ -22,7 +22,7 @@ Customers balance above 10000 changed to VIP
 
 #### Customers Table:
 
-![Customers Table](./output/CUSTOMER_TABLE.png)
+![VIP Customers Table](./output/VIP_CUSTOMER_TABLE.png)
 
 #### DBMS Output:
 
