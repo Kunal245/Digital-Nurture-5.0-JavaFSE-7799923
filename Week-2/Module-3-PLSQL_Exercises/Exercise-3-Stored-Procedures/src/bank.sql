@@ -42,3 +42,23 @@ BEGIN
     ProcessMonthlyInterest;
 END;
 /
+
+-- scenario-2: adding a bonus percentage for given dept.
+CREATE OR REPLACE PROCEDURE UpdateEmployeeBonus(
+    p_department IN VARCHAR2,
+    p_bonus IN NUMBER
+) IS
+BEGIN
+    FOR emp IN (
+        SELECT EmployeeID FROM EMPLOYEES WHERE Department = p_department
+    )
+    LOOP
+        UPDATE EMPLOYEES
+        SET Salary = Salary + (Salary * p_bonus / 100)
+        WHERE EmployeeID = emp.EmployeeID;
+        DBMS_OUTPUT.PUT_LINE('Bonus applied to Employee ID: ' || emp.EmployeeID);
+    END LOOP;
+    COMMIT;
+END;
+/
+
