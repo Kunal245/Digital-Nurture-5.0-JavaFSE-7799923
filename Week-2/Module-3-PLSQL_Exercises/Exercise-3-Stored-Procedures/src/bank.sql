@@ -24,3 +24,8 @@ BEGIN
     COMMIT;
 END;
 /
+
+BEGIN
+    ProcessMonthlyInterest;
+END;
+/
