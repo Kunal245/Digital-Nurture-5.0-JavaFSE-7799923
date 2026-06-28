@@ -20,10 +20,22 @@ Customers above age 60 get a 1% interest rate discount.
 
 Customers balance above 10000 changed to VIP
 
-#### Customers Table:
+#### VIP Customers Table:
 
 ![VIP Customers Table](./output/VIP_CUSTOMER_TABLE.png)
 
 #### DBMS Output:
 
 ![DBMS Output](./output/scenario-2.png)
+
+### Scenario 3: The bank wants to send reminders to customers whose loans are due within the next 30 days.
+
+Send loan due remainder
+
+#### Loans Table:
+
+![Loans Table](./output/LOANS_TABLE.png)
+
+#### DBMS Output:
+
+![DBMS Output](./output/scenario-3.png)
