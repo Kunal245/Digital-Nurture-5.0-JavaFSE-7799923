@@ -1,7 +1,5 @@
 # Exercise 1: Setting Up JUnit
 
----
-
 ### Scenario:
 - Set up JUnit in your Java project to start writing unit tests
 
