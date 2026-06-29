@@ -5,7 +5,7 @@
   and teardown methods.
 
 ### src:
-- 🔗 [AAA Pattern Test.java](./src/test/java/com/kunal/CalculatorTest.java)
+- 🔗 [AAA Pattern Test.java](./src/test/java/com/kunal/AAATest.java)
 
 ### output:
 - ![Test Output](./output.png)
