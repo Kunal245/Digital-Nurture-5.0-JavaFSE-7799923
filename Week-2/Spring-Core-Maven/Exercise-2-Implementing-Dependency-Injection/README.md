@@ -1,18 +1,16 @@
-# Exercise 1: Configuring a Basic Spring Application
+# Exercise 2: Implementing Dependency Injection
 
 ### Scenario:
-- Develop a web application for managing a library using Spring Framework for Backend operations.
+- Added dependencies between the BookService and BookRepository classes using Spring's IOC and DI.
 
 ### Summary:
-- Added SpringFramework dependencies
-- Added BookService and BookRepository beans
 - Created LibraryManagement Spring Maven based application
-
+- Added setter method in BookService class for BookRepository
 ### src:
-- 🔗 [BookRepository.java](../Exercise-1-Configuring-a-Basic-Spring-Application/LibraryManagemnet/src/main/java/com/library/repository/BookRepository.java)
-- 🔗 [BookService.java](../Exercise-1-Configuring-a-Basic-Spring-Application/LibraryManagemnet/src/main/java/com/library/service/BookService.java)
-- 🔗 [applicationContext.xml](../Exercise-1-Configuring-a-Basic-Spring-Application/LibraryManagemnet/src/main/resources/applicationContext.xml)
-- 🔗 [LibraryManagement.java](../Exercise-1-Configuring-a-Basic-Spring-Application/LibraryManagemnet/src/main/java/com/library/LibraryManagementApplication.java)
+- 🔗 [BookRepository.java](../Exercise-2-Implementing-Dependency-Injection/LibraryManagemnet/src/main/java/com/library/repository/BookRepository.java)
+- 🔗 [BookService.java](../Exercise-2-Implementing-Dependency-Injection/LibraryManagemnet/src/main/java/com/library/service/BookService.java)
+- 🔗 [applicationContext.xml](../Exercise-2-Implementing-Dependency-Injection/LibraryManagemnet/src/main/resources/applicationContext.xml)
+- 🔗 [LibraryManagement.java](../Exercise-2-Implementing-Dependency-Injection/LibraryManagemnet/src/main/java/com/library/LibraryManagementApplication.java)
 
 ### output:
 - ![Output](./output.png)
