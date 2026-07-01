@@ -4,13 +4,15 @@
 - Develop a web application for managing a library using Spring Framework for Backend operations.
 
 ### Summary:
-- Added Spring
+- Added SpringFramework dependencies
+- Added BookService and BookRepository beans
+- Created LibraryManagement Spring Maven based application
 
 ### src:
-- 🔗 [BookRepository.java](./src/test/java/com/kunal/MyServiceTest.java)
-- 🔗 [BookService.java](./src/test/java/com/kunal/MyServiceTest.java)
-- 🔗 [applicationContext.xml](./src/test/java/com/kunal/MyServiceTest.java)
-- 🔗 [LibraryManagement.java](./src/test/java/com/kunal/MyServiceTest.java)
+- 🔗 [BookRepository.java](../Exercise-1-Configuring-a-Basic-Spring-Application/LibraryManagemnet/src/main/java/com/library/repository/BookRepository.java)
+- 🔗 [BookService.java](../Exercise-1-Configuring-a-Basic-Spring-Application/LibraryManagemnet/src/main/java/com/library/service/BookService.java)
+- 🔗 [applicationContext.xml](../Exercise-1-Configuring-a-Basic-Spring-Application/LibraryManagemnet/src/main/resources/applicationContext.xml)
+- 🔗 [LibraryManagement.java](../Exercise-1-Configuring-a-Basic-Spring-Application/LibraryManagemnet/src/main/java/com/library/LibraryManagementApplication.java)
 
 ### output:
-- ![Test Output](./output.png)
+- ![Output](./output.png)
