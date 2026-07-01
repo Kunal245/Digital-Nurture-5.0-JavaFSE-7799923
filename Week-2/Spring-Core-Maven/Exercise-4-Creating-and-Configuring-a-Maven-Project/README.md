@@ -1,16 +1,16 @@
-# Exercise 2: Implementing Dependency Injection
+# Exercise 4: Creating and configuring Maven project
 
 ### Scenario:
-- Added dependencies between the BookService and BookRepository classes using Spring's IOC and DI.
+- Set up a new Maven project for the library management application and add Spring dependencies.
 
 ### Summary:
 - Created LibraryManagement Spring Maven based application
-- Added setter method in BookService class for BookRepository
+- Added Spring AOP and WebMVC dependencies
+- Configured the Maven Compiler Plugin for Java version 1.8 in the pom.xml file.
+
 ### src:
-- 🔗 [BookRepository.java](../Exercise-2-Implementing-Dependency-Injection/LibraryManagemnet/src/main/java/com/library/repository/BookRepository.java)
-- 🔗 [BookService.java](../Exercise-2-Implementing-Dependency-Injection/LibraryManagemnet/src/main/java/com/library/service/BookService.java)
-- 🔗 [applicationContext.xml](../Exercise-2-Implementing-Dependency-Injection/LibraryManagemnet/src/main/resources/applicationContext.xml)
-- 🔗 [LibraryManagement.java](../Exercise-2-Implementing-Dependency-Injection/LibraryManagemnet/src/main/java/com/library/LibraryManagementApplication.java)
+- 🔗 [pom.xml](../Exercise-4-Creating-and-Configuring-a-Maven-Project/LibraryManagemnet/pom.xml)
 
 ### output:
-- ![Output](./output.png)
+- ![Successful Build](./build_output.png)
+- ![Dependencies](./output.png)
