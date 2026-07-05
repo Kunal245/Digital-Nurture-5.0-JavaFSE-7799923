@@ -1,12 +1,12 @@
-# HandsOn 1: Create a Spring Web Project using Maven
+# HandsOn 4: Spring Core - Load Country from Spring configuration XML
 
 ### Summary:
-- Created spring-learn SpringBoot Web project
-- Added dependencies Spring Boot DevTools, Spring Web
-- Verifying application startup using SLF4J logging.
+- Created Country bean using Spring XML configuration
+- Retrieved and displayed bean with getBean() method
 
 ### src:
 - 🔗 [SpringLearnApplication.java](./spring-learn/src/main/java/com/cognizant/springlearn/SpringLearnApplication.java)
+- 🔗 [Country.java](./spring-learn/src/main/java/com/cognizant/springlearn/Country.java)
 
 
 ### output:
