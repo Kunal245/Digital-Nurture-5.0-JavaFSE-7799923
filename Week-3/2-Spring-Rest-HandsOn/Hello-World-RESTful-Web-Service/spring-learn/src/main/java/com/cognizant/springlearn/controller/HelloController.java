@@ -11,13 +11,13 @@ public class HelloController {
     private static final Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
 
     @GetMapping("/hello")
-    public String sayHelloe(){
+    public String sayHello(){
 
-        LOGGER.info("START");
+        LOGGER.info("START - sayHello()");
 
         String msg = "Hello World!!";
 
-        LOGGER.info("END");
+        LOGGER.info("END -  sayHello()");
 
         return msg;
     }

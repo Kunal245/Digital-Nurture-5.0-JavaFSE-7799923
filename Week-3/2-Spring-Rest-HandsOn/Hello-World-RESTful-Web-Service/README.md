@@ -1,13 +1,18 @@
 # Hello World RESTful Web Service
 
 ### Summary:
-- Created Country bean using Spring XML configuration
-- Retrieved and displayed bean with getBean() method
+- Created a REST Controller using `@RestController`
+- Added GET endpoint `/hello` using `@GetMapping`
+- Verified results in browser and postman 
 
 ### src:
 - 🔗 [SpringLearnApplication.java](./spring-learn/src/main/java/com/cognizant/springlearn/SpringLearnApplication.java)
-- 🔗 [Country.java](./spring-learn/src/main/java/com/cognizant/springlearn/Country.java)
+- 🔗 [HelloController.java](./spring-learn/src/main/java/com/cognizant/springlearn/controller/HelloController.java)
 
 
-### output:
-- ![Output Logs](./output.png)
+### Browser output:
+- ![Browser Output](./browser_output.png)
+### Postman output:
+- ![Postman Output](./postman_output.png)
+### output logs:
+- ![Output Logs](./output_logs.png)
