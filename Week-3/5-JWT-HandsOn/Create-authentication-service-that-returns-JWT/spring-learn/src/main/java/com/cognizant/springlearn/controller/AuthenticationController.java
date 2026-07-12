@@ -3,12 +3,15 @@ package com.cognizant.springlearn.controller;
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.crypto.SecretKey;
+import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
@@ -48,17 +51,18 @@ public class AuthenticationController {
         return credentials.split(":")[0];
     }
 
-    private String generateJwt(String user){
-        JwtBuilder builder = Jwts.builder();
+    private String generateJwt(String user) {
 
-        builder.setSubject(user);
-        builder.setIssuedAt(new Date());
+        SecretKey key = Keys.hmacShaKeyFor(
+                "thisIsASecretKeyForJwtAuthentication12345"
+                        .getBytes(StandardCharsets.UTF_8));
 
-        builder.setExpiration(new Date(System.currentTimeMillis() + 1200000));
-
-        builder.signWith(SignatureAlgorithm.ES256, "secretKey");
-
-        return builder.compact();
+        return Jwts.builder()
+                .subject(user)
+                .issuedAt(new Date())
+                .expiration(new Date(System.currentTimeMillis() + 1200000))
+                .signWith(key)
+                .compact();
     }
 
 
