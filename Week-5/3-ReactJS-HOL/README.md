@@ -6,7 +6,8 @@
 - Applied CSS styling
 
 ### src:
-- 🔗 [App.js](./scorecalculatorapp/src/App.js)
+- 🔗 [CalculatorScore.js](./scorecalculatorapp/src/Components/CalculatorScore.js)
+- 🔗 [mystyle.css](./scorecalculatorapp/src/Stylesheets/mystyle.css)
 - 🔗 [output.png](./output.png)
 
 

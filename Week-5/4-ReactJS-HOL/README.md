@@ -5,7 +5,8 @@
 - Implemented a class component that fetches blog posts from a REST API using componentDidMount()
 
 ### src:
-- 🔗 [App.js](./blogapp/src/App.js)
+- 🔗 [Post.js](./blogapp/src/Post.js)
+- 🔗 [Posts.js](./blogapp/src/Posts.js)
 - 🔗 [output.png](./output.png)
 
 

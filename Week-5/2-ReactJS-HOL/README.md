@@ -6,6 +6,9 @@
 - Rendered all components from App.js
 
 ### src:
+- 🔗 [About.js](./studentapp/src/Components/About.js)
+- 🔗 [Contact.js](./studentapp/src/Components/Contact.js)
+- 🔗 [Home.js](./studentapp/src/Components/Home.js)
 - 🔗 [App.js](./studentapp/src/App.js)
 - 🔗 [output.png](./output.png)
 
