@@ -1,4 +1,4 @@
-# 5 . ReactJS-HOL
+# 5. ReactJS-HOL
 
 ### Summary:
 - Styled a react component
