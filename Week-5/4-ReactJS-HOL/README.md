@@ -1,4 +1,4 @@
-# 4 . ReactJS-HOL
+# 4. ReactJS-HOL
 
 ### Summary:
 - Created a React application named blogapp
